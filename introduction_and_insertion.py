@@ -17,6 +17,31 @@ class dll:
             self.head.prev = new_node
             self.head = new_node
 
+##    def push(self,data):
+##        new_node = node(data)
+##
+##        if self.head:
+##            new_node.next = self.head
+##            self.head.prev = new_node
+##        self.head = new_node
+
+##    def push(self, new_data): 
+##  
+##        # 1. Allocates node 
+##        # 2. Put the data in it 
+##        new_node = Node(new_data) 
+##  
+##        # 3. Make next of new node as head and 
+##        # previous as None (already None) 
+##        new_node.next = self.head 
+##  
+##        # 4. change prev of head node to new_node 
+##        if self.head is not None: 
+##            self.head.prev = new_node 
+##  
+##        # 5. move the head to point to the new node 
+##        self.head = new_node 
+
     def append(self,data):
         new_node = node(data)
         cur_node = self.head
